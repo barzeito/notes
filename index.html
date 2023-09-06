@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Task Board</title>
+    <script src="/assets/script/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <div class="pop-header">
+            <p>Add new note</p>
+            <div class="icon">
+            <button class="btn" onclick="closePopup()"><i class="bi bi-x"></i></button>
+            </div>
+          </div>
+          <form>
+            <div class="row">
+              <lable for="title">Title</lable>
+              <input type="text" name="title" id="taskTitle" />
+            </div>
+            <div class="row">
+              <lable for="content">Content</lable>
+              <input type="text" name="content" id="taskContent" />
+            </div>
+            <div class="row">
+              <lable for="time">Time</lable>
+              <input type="time" name="time" id="taskTime" />
+            </div>
+            <button>Add Task</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <header>
+      <h1 class="top-title">My Tasks Board</h1>
+      <div class="add-wrapper">
+        <li class="add-box">
+          <div class="icon">
+            <button class="btn" onclick="openPopup()"><i class="bi bi-plus-lg"></i></button>
+          </div>
+          <p>Add new note</p>
+        </li>
+      </div>
+    </header>
+    <h1 class="middle-title">My Tasks</h1>
+    <section>
+      <div class="wrapper">
+        <li class="note">
+          <div class="header">
+            <p>Note Title</p>
+            <div class="icon"><i class="bi bi-x"></i></div>
+          </div>
+          <div class="note-content">
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+              veritatis odio itaque eum amet perspiciatis nisi accusamus magni
+              obcaecati sunt ducimus tenetur cupiditate error autem animi
+              recusandae impedit ut praesentium!</span
+            >
+            <span>Date</span>
+            <span>Time</span>
+          </div>
+        </li>
+      </div>
+    </section>
+  </body>
+</html>
